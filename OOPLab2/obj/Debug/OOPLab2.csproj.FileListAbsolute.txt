@@ -4,3 +4,4 @@ C:\Users\SnieFox\source\repos\OOP Git\OOP\OOPLab2\bin\Debug\OOPLab2.pdb
 C:\Users\SnieFox\source\repos\OOP Git\OOP\OOPLab2\obj\Debug\OOPLab2.csproj.CoreCompileInputs.cache
 C:\Users\SnieFox\source\repos\OOP Git\OOP\OOPLab2\obj\Debug\OOPLab2.exe
 C:\Users\SnieFox\source\repos\OOP Git\OOP\OOPLab2\obj\Debug\OOPLab2.pdb
+C:\Users\SnieFox\source\repos\OOP Git\OOP\OOPLab2\obj\Debug\OOPLab2.csprojAssemblyReference.cache

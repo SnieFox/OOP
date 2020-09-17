@@ -15,7 +15,7 @@ namespace Lab2._1
             Address address = new Address(02099, "Ukraine", "Kyiv", "Rosiyskaya", 15, 41);
             address.ShowAddress();
 
-            Console.WriteLine(new string('-',30));
+            Console.WriteLine(new string('-', 30));
             Console.WriteLine("Task 2\n");
             Console.Write("Length: ");
             double width = Convert.ToDouble(Console.ReadLine());
@@ -33,7 +33,7 @@ namespace Lab2._1
             Author author = new Author(Console.ReadLine());
             Console.Write($"Content: ");
             Content content = new Content(Console.ReadLine());
-            Book book = new Book(title,author,content);
+            Book book = new Book(title, author, content);
             book.Show();
 
             Console.WriteLine(new string('-', 30));
@@ -55,6 +55,16 @@ namespace Lab2._1
             Console.WriteLine("Task 6\n");
             Converter converter = new Converter(14, 144, 765, 117);
             converter.ValueConverter();
+
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine("Task 7\n");
+            Employee employee = new Employee("Daniil", "Ohorodnik");
+            employee.Show();
+
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine("Task 8\n");
+            Invoice invoice = new Invoice(16847, "Ohorodnik", "Galushki");
+            invoice.Price();
             Console.ReadKey();
         }
     }
