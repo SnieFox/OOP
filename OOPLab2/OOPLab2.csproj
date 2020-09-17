@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FEB0555E-AFB1-4C32-8941-36674F239774}</ProjectGuid>
+    <ProjectGuid>{4DF8BB1B-ECF8-47E6-B203-9BA33AF32CB1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lab2._1</RootNamespace>
-    <AssemblyName>Lab2.1</AssemblyName>
+    <RootNamespace>OOPLab2</RootNamespace>
+    <AssemblyName>OOPLab2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Rectangle.cs" />
+    <Compile Include="Address.cs" />
+    <Compile Include="Author.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="Content.cs" />
+    <Compile Include="Converter.cs" />
+    <Compile Include="Figure.cs" />
+    <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="Title.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
