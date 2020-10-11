@@ -51,6 +51,18 @@ namespace Program
             a3.Point();
             Debug.WriteLine(new string('-', 30));
             #endregion
+
+            #region 3-e Задание
+            Streamer streamer = new Streamer("Vadichka", "PepegleSS", 34);
+            streamer.ShowMessage();
+
+            TwitchStreamer twitchStreamer = new TwitchStreamer("Artem", "Evelone192", 56, 431, 1113421, "Freak Squad");
+            twitchStreamer.ShowMessage();
+
+            YouTubeStreamer youTubeStreamer = new YouTubeStreamer("Stas", "Satori Streams", 44, 2331441, 361);
+            youTubeStreamer.ShowMessage();
+            #endregion
+            Console.ReadKey();
         }
     }
 }

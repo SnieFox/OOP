@@ -52,6 +52,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Lab1\Student.cs" />
+    <Compile Include="Lab3\Streamer.cs" />
+    <Compile Include="Lab3\TwitchStreamer.cs" />
+    <Compile Include="Lab3\YouTubeStreamer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
