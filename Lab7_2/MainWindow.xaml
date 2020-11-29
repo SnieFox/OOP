@@ -1,0 +1,87 @@
+﻿<Window x:Class="Lab7_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab7_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="557.52" Width="1073.861">
+    <Grid Margin="0,0,2,-1">
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Введите количество рядов:" VerticalAlignment="Top" Margin="10,10,0,0" Height="38" Width="276" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="384,10,0,0" Height="38" Width="316" FontSize="22" Text="Введите количество столбцов:"></TextBlock>
+        <TextBox x:Name="Rows" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="291,13,0,0" FontSize="22"/>
+        <TextBox x:Name="Columns" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="705,13,0,0" FontSize="22"/>
+        <Button Content="Создать" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Chartreuse" Width="190" Margin="826,10,0,0" Click="Button_Click" Height="38" FontSize="22"/>
+        <!--<Grid HorizontalAlignment="Left" Height="212" Margin="556,80,0,0" VerticalAlignment="Top" Width="512"/>-->
+        <Border BorderBrush="Black"  BorderThickness="1" Margin="535,92,10,221">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5.5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Производная матрица" HorizontalAlignment="Center" FontSize="20" Margin="10,0,42,0"/>
+                <TextBlock Grid.Row="0" Grid.Column="1" FontSize="20" x:Name="DerivedSize1" HorizontalAlignment="Center"/>
+                <ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalScrollBarVisibility="Visible" Margin="0 0 1 0">
+                    <TextBlock x:Name="DerivedMatrix1" FontSize="17" Margin="5"/>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+        <Border BorderBrush="Black"  BorderThickness="1" Margin="10,92,535,221">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5.5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Базовая матрица" HorizontalAlignment="Center" FontSize="20" Margin="10,0,92,0"/>
+                <TextBlock Grid.Row="0" Grid.Column="1" x:Name="BaseSize" FontSize="20" HorizontalAlignment="Center"/>
+                <ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalScrollBarVisibility="Visible" Margin="0 0 1 0">
+                    <TextBlock x:Name="BaseMatrix" FontSize="17" Margin="5"/>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+        <Border BorderBrush="Black"  BorderThickness="1" Margin="535,311,10,2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5.5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" FontSize="20" Margin="10,0,42,0"><Run Text="Производная матрица"/><LineBreak/><Run Text=""/></TextBlock>
+                <TextBlock Grid.Row="0" Grid.Column="1" FontSize="20" x:Name="DerivedSize3" HorizontalAlignment="Center"/>
+                <ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalScrollBarVisibility="Visible" Margin="0 0 1 0">
+                    <TextBlock x:Name="DerivedMatrix3" FontSize="17" Margin="5"/>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+        <Border BorderBrush="Black"  BorderThickness="1" Margin="10,311,535,2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5.5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Производная матрица" HorizontalAlignment="Center" FontSize="20" Margin="10,0,42,0"/>
+                <TextBlock Grid.Row="0" Grid.Column="1" FontSize="20" x:Name="DerivedSize2" HorizontalAlignment="Center"/>
+                <ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalScrollBarVisibility="Visible" Margin="1,0,0,0">
+                    <TextBlock x:Name="DerivedMatrix2" FontSize="17" Margin="5"/>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+
+
+    </Grid>
+</Window>
