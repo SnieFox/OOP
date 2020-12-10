@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace Lab7_3.Classes
+namespace Lab7_3
 {
     public class Article
     {

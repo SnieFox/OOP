@@ -4,9 +4,9 @@ using System.ComponentModel;
 using System.IO;
 using System.Text;
 using Newtonsoft.Json;
-using Lab7_3.Classes;
+using Lab7_3;
 
-namespace Lab7_3.Services
+namespace Lab7_3
 {
     class FIleIOService
     {

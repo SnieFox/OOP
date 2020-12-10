@@ -10,7 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Lab7_3.Classes;
+using Lab7_3;
 
 namespace Lab7_3.Dialog_boxes
 {
